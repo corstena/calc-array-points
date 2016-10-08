@@ -61,7 +61,54 @@ func arrayOperation(array : [Int], operation : ([Int]) -> Double) -> Double {
     return operation(array)
 }
 
-//func addPoints ((Double, Double), )
+func addCoordinates (coordinate1 : (Int, Int), coordinate2 : (Int, Int)) -> (Int, Int) {
+    return (coordinate1.0 + coordinate2.0, coordinate1.1 + coordinate2.1)
+}
+
+func subtractCoordinates (coordinate1 : (Int, Int), coordinate2 : (Int, Int)) -> (Int, Int) {
+    return (coordinate1.0 - coordinate2.0, coordinate1.1 - coordinate2.1)
+}
+
+func addDictCoordinates (coordinateDictionary1 : [String : Double], coordinateDictionary2 : [String : Double]) -> [String : Double] {
+    var totalx = 0.0
+    var totaly = 0.0
+    for (key, value) in coordinateDictionary1 {
+        if(key == "x") {
+            totalx += value
+        } else if(key == "y") {
+            totaly += value
+        }
+    }
+    for (key, value) in coordinateDictionary2 {
+        if(key == "x") {
+            totalx += value
+        } else if(key == "y") {
+            totaly += value
+        }
+    }
+    return ["x" : totalx, "y" : totaly]
+}
+
+func subtractDictCoordinates (coordinateDictionary1 : [String : Double], coordinateDictionary2 : [String : Double]) -> [String : Double] {
+    var totalx = 0.0
+    var totaly = 0.0
+    for (key, value) in coordinateDictionary1 {
+        if(key == "x") {
+            totalx -= value
+        } else if(key == "y") {
+            totaly -= value
+        }
+    }
+    for (key, value) in coordinateDictionary2 {
+        if(key == "x") {
+            totalx -= value
+        } else if(key == "y") {
+            totaly -= value
+        }
+    }
+    return ["x" : totalx, "y" : totaly]
+}
+
 
 print(mathOperation(valueOne: 1, valueTwo: 2, operation: divide))
 print(arrayOperation(array : [1, 2, 3, 4 ,5], operation : arrayAvg))
