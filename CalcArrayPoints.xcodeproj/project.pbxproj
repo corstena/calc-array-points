@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D809BD71DAC538600DC2D94 /* CalcArrayPointsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D809BD61DAC538600DC2D94 /* CalcArrayPointsUnitTests.swift */; };
+		9D809BD81DAC539500DC2D94 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7CDFF1DA87AE700C934B4 /* main.swift */; };
 		9DB7CE001DA87AE700C934B4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7CDFF1DA87AE700C934B4 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,11 +25,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D809BCE1DAC52BA00DC2D94 /* CalcArrayPointsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcArrayPointsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D809BD21DAC52BA00DC2D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D809BD61DAC538600DC2D94 /* CalcArrayPointsUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcArrayPointsUnitTests.swift; sourceTree = "<group>"; };
 		9DB7CDFC1DA87AE700C934B4 /* CalcArrayPoints */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CalcArrayPoints; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB7CDFF1DA87AE700C934B4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9D809BCB1DAC52BA00DC2D94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DB7CDF91DA87AE700C934B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +50,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D809BCF1DAC52BA00DC2D94 /* CalcArrayPointsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D809BD61DAC538600DC2D94 /* CalcArrayPointsUnitTests.swift */,
+				9D809BD21DAC52BA00DC2D94 /* Info.plist */,
+			);
+			path = CalcArrayPointsTests;
+			sourceTree = "<group>";
+		};
 		9DB7CDF31DA87AE700C934B4 = {
 			isa = PBXGroup;
 			children = (
 				9DB7CDFE1DA87AE700C934B4 /* CalcArrayPoints */,
+				9D809BCF1DAC52BA00DC2D94 /* CalcArrayPointsTests */,
 				9DB7CDFD1DA87AE700C934B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				9DB7CDFC1DA87AE700C934B4 /* CalcArrayPoints */,
+				9D809BCE1DAC52BA00DC2D94 /* CalcArrayPointsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9D809BCD1DAC52BA00DC2D94 /* CalcArrayPointsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D809BD51DAC52BA00DC2D94 /* Build configuration list for PBXNativeTarget "CalcArrayPointsTests" */;
+			buildPhases = (
+				9D809BCA1DAC52BA00DC2D94 /* Sources */,
+				9D809BCB1DAC52BA00DC2D94 /* Frameworks */,
+				9D809BCC1DAC52BA00DC2D94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalcArrayPointsTests;
+			productName = CalcArrayPointsTests;
+			productReference = 9D809BCE1DAC52BA00DC2D94 /* CalcArrayPointsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9DB7CDFB1DA87AE700C934B4 /* CalcArrayPoints */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DB7CE031DA87AE700C934B4 /* Build configuration list for PBXNativeTarget "CalcArrayPoints" */;
@@ -92,6 +132,10 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = iSchool;
 				TargetAttributes = {
+					9D809BCD1DAC52BA00DC2D94 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					9DB7CDFB1DA87AE700C934B4 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -111,11 +155,31 @@
 			projectRoot = "";
 			targets = (
 				9DB7CDFB1DA87AE700C934B4 /* CalcArrayPoints */,
+				9D809BCD1DAC52BA00DC2D94 /* CalcArrayPointsTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		9D809BCC1DAC52BA00DC2D94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		9D809BCA1DAC52BA00DC2D94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D809BD81DAC539500DC2D94 /* main.swift in Sources */,
+				9D809BD71DAC538600DC2D94 /* CalcArrayPointsUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DB7CDF81DA87AE700C934B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +191,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		9D809BD31DAC52BA00DC2D94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CalcArrayPointsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.corsten.CalcArrayPointsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9D809BD41DAC52BA00DC2D94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CalcArrayPointsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.corsten.CalcArrayPointsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		9DB7CE011DA87AE700C934B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -234,6 +324,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9D809BD51DAC52BA00DC2D94 /* Build configuration list for PBXNativeTarget "CalcArrayPointsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D809BD31DAC52BA00DC2D94 /* Debug */,
+				9D809BD41DAC52BA00DC2D94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9DB7CDF71DA87AE700C934B4 /* Build configuration list for PBXProject "CalcArrayPoints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -250,6 +348,7 @@
 				9DB7CE051DA87AE700C934B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
